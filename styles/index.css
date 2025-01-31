@@ -30,8 +30,9 @@ div#first {
 
 .first__one, .first__two, .first__three {
     background-color: #B88C9E;
-    width: 78px; 
-    height: 78px;
+    max-width: 78px;
+    width: 100%;
+    min-height: 78px;
     border-radius: 4px; 
     border: 1px solid black; 
 }
@@ -39,15 +40,17 @@ div#first {
 div#second {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     gap: 20px;
 }
 
 .second__one, .second__two, .second__three {
-    display: flex; 
+    display: flex;
+    align-items: stretch; 
     background-color: #B88C9E;
-    width: 78px; 
-    height: 120px;
+    max-width: 78px; 
+    width: 100%;
+    min-height: 78px;
     border-radius: 4px; 
     border: none;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
@@ -63,8 +66,9 @@ div#third {
 .third__one, .third__two, .third__three {
     display: flex; 
     background-color: #B88C9E;
-    width: 78px; 
-    height: 78px;
+    max-width: 78px; 
+    width: 100%;
+    min-height: 78px;
     border-radius: 4px; 
     border: none;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
@@ -75,11 +79,24 @@ div#fourth {
     justify-content: space-between;
 }
 
-.fourth__one, .fourth__two, .fourth__three {
+.fourth__one, .fourth__two {
     display: flex; 
     background-color: #B88C9E;
-    width: 78px; 
-    height: 78px;
+    max-width: 78px; 
+    width: 100%;
+    min-height: 78px;
+    border-radius: 4px; 
+    border: none;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+}
+
+.fourth__three {
+    display: flex; 
+    align-self: flex-end;
+    background-color: #B88C9E;
+    max-width: 78px; 
+    width: 100%;
+    min-height: 78px;
     border-radius: 4px; 
     border: none;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
@@ -88,7 +105,7 @@ div#fourth {
 div#fifth {
     display: flex; 
     justify-content: space-around;
-    align-items: center;
+    align-items: baseline;
 }
 
 p {
@@ -105,18 +122,22 @@ p {
 
 .fifth__one, .fifth__three {
     display: flex; 
+    align-self: stretch;
     background-color: #B88C9E;
-    width: 78px; 
-    height: 120px;
+    max-width: 78px; 
+    width: 100%;
+    min-height: 78px;
     border-radius: 4px; 
     border: none;
 }
 
 .fifth__two {
     display: flex; 
+    align-self: center;
     background-color: #B88C9E;
-    width: 78px; 
-    height: 64px;
+    max-width: 78px; 
+    width: 100%;
+    min-height: 64px;
     border-radius: 4px; 
     border: none;
 }
@@ -131,8 +152,9 @@ div#sixth {
 .sixth__one, .sixth__three {
     display: flex; 
     background-color: #B88C9E;
-    width: 78px; 
-    height: 78px;
+    max-width: 78px; 
+    width: 100%;
+    min-height: 78px;
     border-radius: 4px; 
     border: none;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
@@ -140,9 +162,10 @@ div#sixth {
 
 .sixth__two {
     display: flex; 
+    flex-grow: 2;
     background-color: #B88C9E;
-    width: 156px; 
-    height: 78px;
+    min-width: 78px; 
+    min-height: 78px;
     border-radius: 4px; 
     border: none;
     box-shadow: 2px 2px 4px rgba(0,0,0,0.25);
